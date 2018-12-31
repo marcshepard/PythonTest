@@ -1,31 +1,28 @@
-
 """My first Python module
 
 Usage:
-    python3 PyTest arg
+    pythontest arg
 
-    Prints the argument
+Prints the argument
 """
 
-def print(arg):
+import sys
+
+def pyprint(arg):
     """Prints is arg and returns it.
-    
+
     Args:
         arg: String argument to print.
-    
+
     Returns:
         arg
     """
-    print (arg)
+    print(arg)
     return arg
 
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv)<2:
-        print ("Usage: test <string>")
+    if len(sys.argv) < 2:
+        raise TypeError("Usage: pythontest <string>")
     else:
-        main(sys.argv[1])
-
-
-
+        pyprint(sys.argv[1])

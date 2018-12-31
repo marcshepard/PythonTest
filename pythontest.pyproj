@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>c642d0ff-eed0-4399-966e-86a20da84470</ProjectGuid>
+    <ProjectGuid>612d01b9-bae4-49dd-b340-fd191158a518</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyTest.py</StartupFile>
+    <StartupFile>pythontest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>PyTest</Name>
-    <RootNamespace>PyTest</RootNamespace>
+    <Name>pythontest</Name>
+    <RootNamespace>pythontest</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PyTest.py" />
+    <Compile Include="pythontest.py" />
+    <Compile Include="unittest1.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
